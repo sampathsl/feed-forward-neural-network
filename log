@@ -1,0 +1,148 @@
+C:\Users\SAMPATH-T\anaconda3\python.exe K:/IDEA_PROJECTS/feed-forward-neural-network/final.py
+2020-08-01 18:00:02.158292: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll
+-------------------------------------------------------------------------------
+----------------------------------START----------------------------------------
+F1 Score For 5 K-Fold Cross Validation
+2020-08-01 18:00:06.890788: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library nvcuda.dll
+2020-08-01 18:00:07.266946: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1716] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce 940M computeCapability: 5.0
+coreClock: 1.176GHz coreCount: 3 deviceMemorySize: 2.00GiB deviceMemoryBandwidth: 13.41GiB/s
+2020-08-01 18:00:07.267453: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cudart64_101.dll
+2020-08-01 18:00:07.362556: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cublas64_10.dll
+2020-08-01 18:00:07.414498: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cufft64_10.dll
+2020-08-01 18:00:07.443875: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library curand64_10.dll
+2020-08-01 18:00:07.529038: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusolver64_10.dll
+2020-08-01 18:00:07.586999: I tensorflow/stream_executor/platform/default/dso_loader.cc:48] Successfully opened dynamic library cusparse64_10.dll
+2020-08-01 18:00:07.590141: W tensorflow/stream_executor/platform/default/dso_loader.cc:59] Could not load dynamic library 'cudnn64_7.dll'; dlerror: cudnn64_7.dll not found
+2020-08-01 18:00:07.590445: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1753] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2020-08-01 18:00:07.595991: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2020-08-01 18:00:07.653233: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x208952ad360 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-08-01 18:00:07.653661: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-08-01 18:00:07.655165: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1257] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-08-01 18:00:07.655461: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1263]
+Network configuration  [2, 1]
+Model evaluation  [0.5767967700958252, 0.6811594367027283]
+F1 score  0.6810924369747899
+Network configuration  [2, 1]
+Model evaluation  [0.4258611500263214, 0.9275362491607666]
+F1 score  0.9265488609750905
+Network configuration  [2, 1]
+Model evaluation  [0.4541643559932709, 0.8623188138008118]
+F1 score  0.8528536954935744
+Network configuration  [2, 1]
+Model evaluation  [0.5432182550430298, 0.804347813129425]
+F1 score  0.7953084656375322
+Network configuration  [2, 1]
+Model evaluation  [0.4193424582481384, 0.8840579986572266]
+F1 score  0.87907995618839
+
+ Final Mean F1 Score:  0.8269766830538753
+----------------------------------END----------------------------------------
+
+----------------------------------START----------------------------------------
+Changing neuron count of first hidden layer
+'Node count :   5, Mean F1 score :    0.84207
+'Node count :  10, Mean F1 score :    0.85221
+'Node count :  15, Mean F1 score :    0.84725
+'Node count :  20, Mean F1 score :    0.84922
+'Node count :  25, Mean F1 score :    0.84878
+'Node count :  30, Mean F1 score :    0.85158
+'Node count :  35, Mean F1 score :    0.84858
+'Node count :  40, Mean F1 score :    0.85158
+'Node count :  45, Mean F1 score :    0.85158
+'Node count :  50, Mean F1 score :    0.85008
+'Node count :  55, Mean F1 score :    0.85008
+'Node count :  60, Mean F1 score :    0.85158
+'Node count :  65, Mean F1 score :    0.85008
+'Node count :  70, Mean F1 score :    0.85158
+'Node count :  75, Mean F1 score :    0.85305
+'Node count :  80, Mean F1 score :    0.84858
+'Node count :  85, Mean F1 score :    0.85305
+'Node count :  90, Mean F1 score :    0.85158
+'Node count :  95, Mean F1 score :    0.85008
+'Node count :  100, Mean F1 score :    0.84706
+----------------------------------END----------------------------------------
+
+----------------------------------START----------------------------------------
+Changing no. of hidden layers with constant Neurons(15)
+1 Hidden layers F1 score
+'Neurons [ 15], Mean F1 score :    0.85052
+
+--------------------------------------------------------------------------
+Changing no. of hidden layers with constant Neurons(15)
+2 Hidden layers F1 score
+'Neurons [ 15,  15], Mean F1 score :    0.84800
+
+--------------------------------------------------------------------------
+Changing no. of hidden layers with constant Neurons(15)
+3 Hidden layers F1 score
+'Neurons [ 15,  15, 15], Mean F1 score :    0.84492
+
+--------------------------------------------------------------------------
+Changing no. of hidden layers with constant Neurons(15)
+4 Hidden layers F1 score
+'Neurons [ 15,  15, 15, 15], Mean F1 score :    0.84456
+
+--------------------------------------------------------------------------
+Changing no. of hidden layers with constant Neurons(15)
+5 Hidden layers F1 score
+'Neurons [ 15,  15, 15, 15, 15], Mean F1 score :    0.84764
+
+--------------------------------------------------------------------------
+Changing no. of hidden layers with constant Neurons(15)
+6 Hidden layers F1 score
+'Neurons [ 15,  15, 15, 15, 15, 15], Mean F1 score :    0.84188
+
+--------------------------------------------------------------------------
+Changing no. of hidden layers with constant Neurons(15)
+7 Hidden layers F1 score
+'Neurons [ 15,  15, 15, 15, 15, 15, 15], Mean F1 score :    0.84077
+----------------------------------END----------------------------------------
+
+----------------------------------START----------------------------------------
+Changing different Error functions with 1 hidden layer with constant Neurons(15)
+'Neurons [ 15], Mean F1 score :    0.85033
+'Neurons [ 15], Mean F1 score :    0.84879
+'Neurons [ 15], Mean F1 score :    0.84841
+----------------------------------END----------------------------------------
+
+----------------------------------START----------------------------------------
+Changing different activation functions with 1 hidden layer with constant Neurons(15)
+'Neurons [ 15], Mean F1 score :    0.84097
+'Neurons [ 15], Mean F1 score :    0.84088
+'Neurons [ 15], Mean F1 score :    0.84922
+----------------------------------END----------------------------------------
+
+----------------------------------START----------------------------------------
+L1 regularization with different lambda values
+'Regularizor : l1 with lambda :    0.00001 , Mean F1 score :    0.74527
+'Regularizor : l1 with lambda :    0.00010 , Mean F1 score :    0.83098
+'Regularizor : l1 with lambda :    0.00100 , Mean F1 score :    0.82794
+'Regularizor : l1 with lambda :    0.01000 , Mean F1 score :    0.85136
+'Regularizor : l1 with lambda :    0.10000 , Mean F1 score :    0.72609
+'Regularizor : l1 with lambda :    1.00000 , Mean F1 score :    0.35694
+'Regularizor : l1 with lambda :   10.00000 , Mean F1 score :    0.35694
+'Regularizor : l1 with lambda :  100.00000 , Mean F1 score :    0.35694
+'Regularizor : l1 with lambda :  1000.00000 , Mean F1 score :    0.35694
+'Regularizor : l1 with lambda :  10000.00000 , Mean F1 score :    0.34662
+----------------------------------END----------------------------------------
+
+----------------------------------START----------------------------------------
+L2 regularization with different lambda values
+Regularizer : l2 with lambda :    0.00001 , Mean F1 score :    0.83074
+Regularizer : l2 with lambda :    0.00010 , Mean F1 score :    0.84476
+Regularizer : l2 with lambda :    0.00100 , Mean F1 score :    0.83160
+Regularizer : l2 with lambda :    0.01000 , Mean F1 score :    0.71757
+Regularizer : l2 with lambda :    0.10000 , Mean F1 score :    0.84578
+Regularizer : l2 with lambda :    1.00000 , Mean F1 score :    0.71904
+Regularizer : l2 with lambda :   10.00000 , Mean F1 score :    0.72535
+Regularizer : l2 with lambda :  100.00000 , Mean F1 score :    0.34791
+Regularizer : l2 with lambda :  1000.00000 , Mean F1 score :    0.34791
+Regularizer : l2 with lambda :  10000.00000 , Mean F1 score :    0.34791
+----------------------------------END----------------------------------------
+
+----------------------------------START----------------------------------------
+
+Process finished with exit code 0
