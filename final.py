@@ -79,122 +79,122 @@ def evaluateModel(verbose=False):
 print("-------------------------------------------------------------------------------")
 print("----------------------------------START----------------------------------------")
 
-print("F1 Score For 5 K-Fold Cross Validation")
-depthOfNetwork = 2
-neuronCountForLayer = [2, 1]
-activationFuncsForLayer = ['sigmoid', 'sigmoid']
-lossFunction = 'binary_crossentropy'
-regFunction = tf.keras.regularizers.l2(0)
-
-print("\n Final Mean F1 Score: ", evaluateModel(True))
-
-print("----------------------------------END----------------------------------------\n")
-print("----------------------------------START----------------------------------------")
-
-print("Changing neuron count of first hidden layer")
-depthOfNetwork = 2
-activationFuncsForLayer = ['sigmoid', 'sigmoid']
-lossFunction = 'binary_crossentropy'
-regFunction = tf.keras.regularizers.l2(0)
-
-for i in range(5, 105, 5):
-    neuronCountForLayer = [i, 1]
-    print("'Node count : % 3d, Mean F1 score : % 10.5f" % (i, evaluateModel()))
-
-print("----------------------------------END----------------------------------------\n")
-print("----------------------------------START----------------------------------------")
-
-print("Changing no. of hidden layers with constant Neurons(15)")
-print("1 Hidden layers F1 score")
-depthOfNetwork = 2
-neuronCountForLayer = [15, 1]
-activationFuncsForLayer = ['sigmoid', 'sigmoid']
-lossFunction = 'binary_crossentropy'
-regFunction = tf.keras.regularizers.l2(0)
-
-print("'Neurons [% 3d], Mean F1 score : % 10.5f" % (15, evaluateModel()))
-
-print("\n--------------------------------------------------------------------------")
-print("Changing no. of hidden layers with constant Neurons(15)")
-print("2 Hidden layers F1 score")
-depthOfNetwork = 3
-neuronCountForLayer = [15, 15, 1]
-activationFuncsForLayer = ['sigmoid', 'sigmoid', 'sigmoid']
-lossFunction = 'binary_crossentropy'
-regFunction = tf.keras.regularizers.l2(0)
-print("'Neurons [% 3d, % 3d], Mean F1 score : % 10.5f" % (15, 15, evaluateModel()))
-
-print("\n--------------------------------------------------------------------------")
-print("Changing no. of hidden layers with constant Neurons(15)")
-print("3 Hidden layers F1 score")
-depthOfNetwork = 4
-neuronCountForLayer = [15, 15, 15, 1]
-activationFuncsForLayer = ['sigmoid', 'sigmoid', 'sigmoid', 'sigmoid']
-lossFunction = 'binary_crossentropy'
-regFunction = tf.keras.regularizers.l2(0)
-print("'Neurons [% 3d, % 3d,% 3d], Mean F1 score : % 10.5f" % (15, 15, 15, evaluateModel()))
-
-print("\n--------------------------------------------------------------------------")
-print("Changing no. of hidden layers with constant Neurons(15)")
-print("4 Hidden layers F1 score")
-depthOfNetwork = 5
-neuronCountForLayer = [15, 15, 15, 15, 1]
-activationFuncsForLayer = ['sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid']
-lossFunction = 'binary_crossentropy'
-regFunction = tf.keras.regularizers.l2(0)
-print("'Neurons [% 3d, % 3d,% 3d,% 3d], Mean F1 score : % 10.5f" % (15, 15, 15, 15, evaluateModel()))
-
-print("\n--------------------------------------------------------------------------")
-print("Changing no. of hidden layers with constant Neurons(15)")
-print("5 Hidden layers F1 score")
-depthOfNetwork = 6
-neuronCountForLayer = [15, 15, 15, 15, 15, 1]
-activationFuncsForLayer = ['sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid']
-lossFunction = 'binary_crossentropy'
-regFunction = tf.keras.regularizers.l2(0)
-print("'Neurons [% 3d, % 3d,% 3d,% 3d,% 3d], Mean F1 score : % 10.5f" % (15, 15, 15, 15, 15, evaluateModel()))
-
-print("\n--------------------------------------------------------------------------")
-print("Changing no. of hidden layers with constant Neurons(15)")
-print("6 Hidden layers F1 score")
-depthOfNetwork = 7
-neuronCountForLayer = [15, 15, 15, 15, 15, 15, 1]
-activationFuncsForLayer = ['sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid']
-lossFunction = 'binary_crossentropy'
-regFunction = tf.keras.regularizers.l2(0)
-print("'Neurons [% 3d, % 3d,% 3d,% 3d,% 3d,% 3d], Mean F1 score : % 10.5f" % (15, 15, 15, 15, 15, 15, evaluateModel()))
-
-print("\n--------------------------------------------------------------------------")
-print("Changing no. of hidden layers with constant Neurons(15)")
-print("7 Hidden layers F1 score")
-depthOfNetwork = 8
-neuronCountForLayer = [15, 15, 15, 15, 15, 15, 15, 1]
-activationFuncsForLayer = ['sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid']
-lossFunction = 'binary_crossentropy'
-regFunction = tf.keras.regularizers.l2(0)
-print("'Neurons [% 3d, % 3d,% 3d,% 3d,% 3d,% 3d,% 3d], Mean F1 score : % 10.5f" % (
-    15, 15, 15, 15, 15, 15, 15, evaluateModel()))
-
-print("----------------------------------END----------------------------------------\n")
-print("----------------------------------START----------------------------------------")
-
-print("Changing different Error functions with 1 hidden layer with constant Neurons(15)")
-depthOfNetwork = 2
-neuronCountForLayer = [15, 1]
-activationFuncsForLayer = ['sigmoid', 'sigmoid']
-lossFunction_list = ['binary_crossentropy', 'mean_squared_error', 'mean_squared_logarithmic_error']
-regFunction = tf.keras.regularizers.l2(0)
-for each in lossFunction_list:
-    lossFunction = each
-    print("'Neurons [% 3d], Mean F1 score : % 10.5f" % (15, evaluateModel()))
-
-print("----------------------------------END----------------------------------------\n")
-print("----------------------------------START----------------------------------------")
+# print("F1 Score For 5 K-Fold Cross Validation")
+# depthOfNetwork = 2
+# neuronCountForLayer = [2, 1]
+# activationFuncsForLayer = ['sigmoid', 'sigmoid']
+# lossFunction = 'binary_crossentropy'
+# regFunction = tf.keras.regularizers.l2(0)
+#
+# print("\n Final Mean F1 Score: ", evaluateModel(True))
+#
+# print("----------------------------------END----------------------------------------\n")
+# print("----------------------------------START----------------------------------------")
+#
+# print("Changing neuron count of first hidden layer")
+# depthOfNetwork = 2
+# activationFuncsForLayer = ['sigmoid', 'sigmoid']
+# lossFunction = 'binary_crossentropy'
+# regFunction = tf.keras.regularizers.l2(0)
+#
+# for i in range(5, 105, 5):
+#     neuronCountForLayer = [i, 1]
+#     print("'Node count : % 3d, Mean F1 score : % 10.5f" % (i, evaluateModel()))
+#
+# print("----------------------------------END----------------------------------------\n")
+# print("----------------------------------START----------------------------------------")
+#
+# print("Changing no. of hidden layers with constant Neurons(15)")
+# print("1 Hidden layers F1 score")
+# depthOfNetwork = 2
+# neuronCountForLayer = [15, 1]
+# activationFuncsForLayer = ['sigmoid', 'sigmoid']
+# lossFunction = 'binary_crossentropy'
+# regFunction = tf.keras.regularizers.l2(0)
+#
+# print("'Neurons [% 3d], Mean F1 score : % 10.5f" % (15, evaluateModel()))
+#
+# print("\n--------------------------------------------------------------------------")
+# print("Changing no. of hidden layers with constant Neurons(15)")
+# print("2 Hidden layers F1 score")
+# depthOfNetwork = 3
+# neuronCountForLayer = [15, 15, 1]
+# activationFuncsForLayer = ['sigmoid', 'sigmoid', 'sigmoid']
+# lossFunction = 'binary_crossentropy'
+# regFunction = tf.keras.regularizers.l2(0)
+# print("'Neurons [% 3d, % 3d], Mean F1 score : % 10.5f" % (15, 15, evaluateModel()))
+#
+# print("\n--------------------------------------------------------------------------")
+# print("Changing no. of hidden layers with constant Neurons(15)")
+# print("3 Hidden layers F1 score")
+# depthOfNetwork = 4
+# neuronCountForLayer = [15, 15, 15, 1]
+# activationFuncsForLayer = ['sigmoid', 'sigmoid', 'sigmoid', 'sigmoid']
+# lossFunction = 'binary_crossentropy'
+# regFunction = tf.keras.regularizers.l2(0)
+# print("'Neurons [% 3d, % 3d,% 3d], Mean F1 score : % 10.5f" % (15, 15, 15, evaluateModel()))
+#
+# print("\n--------------------------------------------------------------------------")
+# print("Changing no. of hidden layers with constant Neurons(15)")
+# print("4 Hidden layers F1 score")
+# depthOfNetwork = 5
+# neuronCountForLayer = [15, 15, 15, 15, 1]
+# activationFuncsForLayer = ['sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid']
+# lossFunction = 'binary_crossentropy'
+# regFunction = tf.keras.regularizers.l2(0)
+# print("'Neurons [% 3d, % 3d,% 3d,% 3d], Mean F1 score : % 10.5f" % (15, 15, 15, 15, evaluateModel()))
+#
+# print("\n--------------------------------------------------------------------------")
+# print("Changing no. of hidden layers with constant Neurons(15)")
+# print("5 Hidden layers F1 score")
+# depthOfNetwork = 6
+# neuronCountForLayer = [15, 15, 15, 15, 15, 1]
+# activationFuncsForLayer = ['sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid']
+# lossFunction = 'binary_crossentropy'
+# regFunction = tf.keras.regularizers.l2(0)
+# print("'Neurons [% 3d, % 3d,% 3d,% 3d,% 3d], Mean F1 score : % 10.5f" % (15, 15, 15, 15, 15, evaluateModel()))
+#
+# print("\n--------------------------------------------------------------------------")
+# print("Changing no. of hidden layers with constant Neurons(15)")
+# print("6 Hidden layers F1 score")
+# depthOfNetwork = 7
+# neuronCountForLayer = [15, 15, 15, 15, 15, 15, 1]
+# activationFuncsForLayer = ['sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid']
+# lossFunction = 'binary_crossentropy'
+# regFunction = tf.keras.regularizers.l2(0)
+# print("'Neurons [% 3d, % 3d,% 3d,% 3d,% 3d,% 3d], Mean F1 score : % 10.5f" % (15, 15, 15, 15, 15, 15, evaluateModel()))
+#
+# print("\n--------------------------------------------------------------------------")
+# print("Changing no. of hidden layers with constant Neurons(15)")
+# print("7 Hidden layers F1 score")
+# depthOfNetwork = 8
+# neuronCountForLayer = [15, 15, 15, 15, 15, 15, 15, 1]
+# activationFuncsForLayer = ['sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid', 'sigmoid']
+# lossFunction = 'binary_crossentropy'
+# regFunction = tf.keras.regularizers.l2(0)
+# print("'Neurons [% 3d, % 3d,% 3d,% 3d,% 3d,% 3d,% 3d], Mean F1 score : % 10.5f" % (
+#     15, 15, 15, 15, 15, 15, 15, evaluateModel()))
+#
+# print("----------------------------------END----------------------------------------\n")
+# print("----------------------------------START----------------------------------------")
+#
+# print("Changing different Error functions with 1 hidden layer with constant Neurons(15)")
+# depthOfNetwork = 2
+# neuronCountForLayer = [15, 1]
+# activationFuncsForLayer = ['sigmoid', 'sigmoid']
+# lossFunction_list = ['binary_crossentropy', 'mean_squared_error', 'mean_squared_logarithmic_error']
+# regFunction = tf.keras.regularizers.l2(0)
+# for each in lossFunction_list:
+#     lossFunction = each
+#     print("'Neurons [% 3d], Mean F1 score : % 10.5f" % (15, evaluateModel()))
+#
+# print("----------------------------------END----------------------------------------\n")
+# print("----------------------------------START----------------------------------------")
 
 print("Changing different activation functions with 1 hidden layer with constant Neurons(15)")
 depthOfNetwork = 2
 neuronCountForLayer = [15, 1]
-activationFuncList = ['relu', 'sigmoid']
+activationFuncList = ['relu', 'tanh', 'sigmoid']
 lossFunction = 'binary_crossentropy'
 regFunction = tf.keras.regularizers.l2(0)
 for each in activationFuncList:
