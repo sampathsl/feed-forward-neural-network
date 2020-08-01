@@ -116,33 +116,30 @@ Changing different activation functions with 1 hidden layer with constant Neuron
 ----------------------------------END----------------------------------------
 
 ----------------------------------START----------------------------------------
-L1 regularization with different lambda values
-'Regularizor : l1 with lambda :    0.00001 , Mean F1 score :    0.74527
-'Regularizor : l1 with lambda :    0.00010 , Mean F1 score :    0.83098
-'Regularizor : l1 with lambda :    0.00100 , Mean F1 score :    0.82794
-'Regularizor : l1 with lambda :    0.01000 , Mean F1 score :    0.85136
-'Regularizor : l1 with lambda :    0.10000 , Mean F1 score :    0.72609
+'Regularizor : l1 with lambda :    0.00001 , Mean F1 score :    0.84950
+'Regularizor : l1 with lambda :    0.00010 , Mean F1 score :    0.84084
+'Regularizor : l1 with lambda :    0.00100 , Mean F1 score :    0.75847
+'Regularizor : l1 with lambda :    0.01000 , Mean F1 score :    0.85348
+'Regularizor : l1 with lambda :    0.10000 , Mean F1 score :    0.75311
 'Regularizor : l1 with lambda :    1.00000 , Mean F1 score :    0.35694
-'Regularizor : l1 with lambda :   10.00000 , Mean F1 score :    0.35694
+'Regularizor : l1 with lambda :   10.00000 , Mean F1 score :    0.33759
 'Regularizor : l1 with lambda :  100.00000 , Mean F1 score :    0.35694
-'Regularizor : l1 with lambda :  1000.00000 , Mean F1 score :    0.35694
-'Regularizor : l1 with lambda :  10000.00000 , Mean F1 score :    0.34662
+'Regularizor : l1 with lambda :  1000.00000 , Mean F1 score :    0.34791
+'Regularizor : l1 with lambda :  10000.00000 , Mean F1 score :    0.34791
 ----------------------------------END----------------------------------------
 
 ----------------------------------START----------------------------------------
 L2 regularization with different lambda values
-Regularizer : l2 with lambda :    0.00001 , Mean F1 score :    0.83074
-Regularizer : l2 with lambda :    0.00010 , Mean F1 score :    0.84476
-Regularizer : l2 with lambda :    0.00100 , Mean F1 score :    0.83160
-Regularizer : l2 with lambda :    0.01000 , Mean F1 score :    0.71757
-Regularizer : l2 with lambda :    0.10000 , Mean F1 score :    0.84578
-Regularizer : l2 with lambda :    1.00000 , Mean F1 score :    0.71904
-Regularizer : l2 with lambda :   10.00000 , Mean F1 score :    0.72535
-Regularizer : l2 with lambda :  100.00000 , Mean F1 score :    0.34791
-Regularizer : l2 with lambda :  1000.00000 , Mean F1 score :    0.34791
+Regularizer : l2 with lambda :    0.00001 , Mean F1 score :    0.84577
+Regularizer : l2 with lambda :    0.00010 , Mean F1 score :    0.84081
+Regularizer : l2 with lambda :    0.00100 , Mean F1 score :    0.84254
+Regularizer : l2 with lambda :    0.01000 , Mean F1 score :    0.84612
+Regularizer : l2 with lambda :    0.10000 , Mean F1 score :    0.84851
+Regularizer : l2 with lambda :    1.00000 , Mean F1 score :    0.84080
+Regularizer : l2 with lambda :   10.00000 , Mean F1 score :    0.59179
+Regularizer : l2 with lambda :  100.00000 , Mean F1 score :    0.35694
+Regularizer : l2 with lambda :  1000.00000 , Mean F1 score :    0.35694
 Regularizer : l2 with lambda :  10000.00000 , Mean F1 score :    0.34791
 ----------------------------------END----------------------------------------
-
-----------------------------------START----------------------------------------
 
 Process finished with exit code 0
