@@ -194,7 +194,7 @@ print("----------------------------------START----------------------------------
 print("Changing different activation functions with 1 hidden layer with constant Neurons(15)")
 depthOfNetwork = 2
 neuronCountForLayer = [15, 1]
-activationFuncList = ['relu', 'tanh', 'sigmoid']
+activationFuncList = ['relu', 'sigmoid']
 lossFunction = 'binary_crossentropy'
 regFunction = tf.keras.regularizers.l2(0)
 for each in activationFuncList:
@@ -207,7 +207,7 @@ print("----------------------------------START----------------------------------
 print("L1 regularization with different lambda values")
 depthOfNetwork = 2
 neuronCountForLayer = [15, 1]
-activationFuncsForLayer = ['relu', 'tanh', 'sigmoid']
+activationFuncsForLayer = ['tanh', 'sigmoid']
 lossFunction = 'binary_crossentropy'
 regFunction = tf.keras.regularizers.l1(0)
 
@@ -221,7 +221,7 @@ print("----------------------------------START----------------------------------
 print("L2 regularization with different lambda values")
 depthOfNetwork = 2
 neuronCountForLayer = [15, 1]
-activationFuncsForLayer = ['relu', 'tanh', 'sigmoid']
+activationFuncsForLayer = ['tanh', 'sigmoid']
 lossFunction = 'binary_crossentropy'
 regFunction = tf.keras.regularizers.l2(0)
 
